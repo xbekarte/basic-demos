@@ -1,0 +1,13 @@
+name: repo-dispatch
+on:
+  repository_dispatch:
+    types: [on-demand-test]
+    
+jobs:
+  build:
+    runs-on: ubuntu-latest    
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Debug action
+        uses: hmarr/debug-action@v2.0.1
