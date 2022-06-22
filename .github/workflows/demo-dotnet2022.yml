@@ -30,6 +30,11 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
+      
+      - name: Debug action
+        # You may pin to the exact commit or the version.
+        # uses: hmarr/debug-action@1201a20fc9d278ddddd5f0f46922d06513892491
+        uses: hmarr/debug-action@v2.0.1
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
