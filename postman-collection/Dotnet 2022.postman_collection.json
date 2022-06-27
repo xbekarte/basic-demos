@@ -1,0 +1,68 @@
+{
+	"info": {
+		"_postman_id": "3281ce0b-9caf-4bc1-8c2b-3801a59649a9",
+		"name": "Dotnet 2022",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "590263"
+	},
+	"item": [
+		{
+			"name": "Repository dispatch",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "token TOKEN",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"event_type\":\"on-demand-test\",\r\n    \"client_payload\":\r\n    {\r\n        \"unit\":false,\"integration\":true\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.github.com/repos/lfraile-dotnet-2022-workshop/basic-demos/dispatches",
+					"protocol": "https",
+					"host": [
+						"api",
+						"github",
+						"com"
+					],
+					"path": [
+						"repos",
+						"lfraile-dotnet-2022-workshop",
+						"basic-demos",
+						"dispatches"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
